@@ -71,3 +71,14 @@ For the project to work, you need to install all the required packages for this 
 ```bash
 pip install -r requirements.txt
 ```
+
+### Start Application
+
+To start the application use:
+
+```bash
+uvicorn main:app --reload
+```
+
+Open http://127.0.0.1:8000/ to see {"status":"ok"}
+Open http://127.0.0.1:8000/docs to see API documentation
