@@ -13,6 +13,7 @@ SessionLocal = sessionmaker(
     bind=engine,
 )
 
+
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()
     try:

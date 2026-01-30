@@ -3,6 +3,7 @@ from routes.feature_flags import feature_flag_router
 
 app = FastAPI()
 
+
 @app.get("/")
 def health():
     return {"status": "ok"}
