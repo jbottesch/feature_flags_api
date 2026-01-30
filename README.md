@@ -72,6 +72,43 @@ For the project to work, you need to install all the required packages for this 
 pip install -r requirements.txt
 ```
 
+### Install Prostgresql, if not existing
+
+#### IMPORTANT: IF version check fails add path to shell
+
+```bash
+echo 'export PATH="/usr/local/opt/postgresql@16/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+```bash
+brew install postgresql@16 #install postresql
+```
+
+```bash
+brew psql --version #check version
+```
+
+```bash
+brew services start postgresql@16 #start postgresql
+```
+
+```bash
+\q #quit postgresql
+```
+
+### Create DB
+
+```bash
+createdb feature_flags
+```
+
+### Apply Revisions
+
+```bash
+alembic upgrade head
+```
+
 ### Start Application
 
 To start the application use:
@@ -80,5 +117,5 @@ To start the application use:
 uvicorn main:app --reload
 ```
 
-Open http://127.0.0.1:8000/ to see {"status":"ok"}
-Open http://127.0.0.1:8000/docs to see API documentation
+- Open http://127.0.0.1:8000/ to see {"status":"ok"}
+- Open http://127.0.0.1:8000/docs to see API documentation
