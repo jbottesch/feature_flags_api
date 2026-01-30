@@ -1,0 +1,13 @@
+# Core framework
+fastapi
+uvicorn[standard]
+
+# Data validation
+pydantic
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Migrations
+alembic
