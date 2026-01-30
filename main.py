@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes.feature_flags import feature_flag_router
+from .routes.feature_flags import feature_flag_router
 
 app = FastAPI()
 

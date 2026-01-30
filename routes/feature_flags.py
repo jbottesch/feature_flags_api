@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from database import get_db
-from models import FeatureFlag
-from schemas.feature_flags import (
+from ..database import get_db
+from ..models import FeatureFlag
+from ..schemas.feature_flags import (
     FeatureFlagCreateSchema,
     FeatureFlagReadSchema,
     FeatureFlagUpdateSchema,
