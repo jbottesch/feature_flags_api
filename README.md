@@ -46,14 +46,28 @@ The focus is on clarity, learning, and clean structure rather than completeness.
 
 ## How to run the project:
 
-# Create the virtual environment
+### Create the virtual environment
 
-1. Create a virtual environment: python3 -m venv venv
-   - If there is an error creating the venv just delete the venv and try again. Worked for me.
-2. Activate the environment: source venv/bin/activate
-   - If you just open a new terminal in vscode the venv is activated automatically
+1. Create a virtual environment on the terminal:
 
-# Install requirements
+```bash
+python3 -m venv venv
+```
+
+If there is an error creating the venv just delete the venv and try again. Worked for me.
+
+2. Activate the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+Tipp: If you just open a new terminal in vscode the venv is activated automatically
+
+### Install requirements
 
 For the project to work, you need to install all the required packages for this project:
--> pip install -r requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
